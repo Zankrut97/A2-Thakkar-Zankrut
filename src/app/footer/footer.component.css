@@ -1,0 +1,12 @@
+.footer-menu{
+    border-radius: 25px;
+    color: #888;
+    font-weight: 400;
+    padding: 8px 15px;
+    white-space: nowrap;
+}
+
+.footer-menu:hover{
+    color: black;
+    background-color: white;
+}
