@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Signin</title>
+</head>
 <div class="container">
     <div class="row">
         <div class="col-lg-7 col-md-8 col-sm-6" style="margin-top: 50px;">
@@ -5,7 +11,7 @@
             <p style="text-align: center;">Sign in to keep track of all your job applications so that you never miss an
                 opportunity
             </p>
-            <img src="\assets\scrum-board.svg" alt="">
+            <img src="/assets/scrum-board.svg" alt="">
         </div>
         <!--<div class="col-sm-9 col-md-7 col-lg-4 mx-auto" style="margin:25px">-->
         <div class="col-lg-5 col-md-4 col-sm-6" style="margin-top:25px">
@@ -20,6 +26,7 @@
                                 <input #email="ngModel" matInput required ngModel name="email" placeholder="abc@abc.com"
                                     pattern="^[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}$">
                                 <mat-icon matSuffix>email</mat-icon>
+                                <mat-error *ngIf=" !email.touched && email.invalid">Email is required</mat-error>
                                 <mat-error *ngIf=" email.touched && email.invalid">
                                     <div *ngIf="email.errors.required">Email is required</div>
                                     <div *ngIf="email.errors.pattern">Enter valid Email id(abc@abc.com)</div>
@@ -43,10 +50,13 @@
                         <button class="btn btn-lg btn-primary btn-block signin-btn" type="submit">SIGN IN</button>
                         <p style="margin-top:10px;text-align: center;font-size: 16px ;">Don't have an account?<a
                                 routerLink="/sign-up">Sign up</a></p>
-
+                        <p style="margin-top:5px;text-align: center;font-size: 16px;"><a routerLink="/sign-up">forgot
+                                password</a></p>
                     </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+</html>

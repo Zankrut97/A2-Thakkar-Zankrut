@@ -21,6 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { BlogsfilterPipe } from './blogs/blogsfilter.pipe';
 import { BlogsPostDetailComponent } from './blogs-post-detail/blogs-post-detail.component';
+import { JobsDetailComponent } from './jobs-detail/jobs-detail.component';
+import { JobsfilterPipe } from './jobs/jobsfilter.pipe';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { BlogsPostDetailComponent } from './blogs-post-detail/blogs-post-detail.
     NotfoundComponent,
     BlogsfilterPipe,
     BlogsPostDetailComponent,
+    JobsDetailComponent,
+    JobsfilterPipe,
   ],
   imports: [
     BrowserModule,

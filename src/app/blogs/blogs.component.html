@@ -1,7 +1,7 @@
 <div class="container">
     <div>
         <div>
-            <h2 style="text-align:center; font-size:24px; font-weight: 700; font-style: oblique;">Learn from the
+            <h2 style="text-align:center; font-size:24px; font-weight: 700;">Learn from the
                 experience of other through
                 these short Blogs</h2>
             <div style="text-align: right;">
@@ -15,8 +15,9 @@
         <div class="row" style="margin-top:25px;">
             <div class="col-lg-3 col-md-4 col-sm-6" *ngFor="let blog of blogs | blogsfilter:blogSearch"
                 (click)="onBlogCard(blog)">
-                <div class="card" style="margin:10px;">
-                    <img class=" card-img-top" width="150px" height="150px" src={{blog.img}} alt="">
+                <div class="card" style="margin:10px;box-shadow: 0.5rem 1rem 1rem 0.5rem rgba(0, 0, 0, 0.1);">
+                    <img style="margin:5px;" class=" card-img-top" width="150" height="150" src={{blog.img}}
+                        alt="Blog-image">
                     <div class="card-body">
                         <h4 style="font-weight: 600;" class="card-title">{{blog.title}}</h4>
                         <p class="card-text">{{blog.description}}

@@ -1,3 +1,13 @@
 .container{
     min-height:100%;
 }
+
+.font-style-700{
+    font-family: Lato;
+    font-weight: 700;
+}
+
+.font-style-400{
+    font-family: Lato;
+    font-weight: 400;
+}

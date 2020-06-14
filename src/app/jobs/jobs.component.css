@@ -1,0 +1,13 @@
+.container{
+    min-height: 100%;
+}
+.job-search-input{
+    border-radius: 25px;
+}
+
+.apply-job-btn{
+    background-color: blue;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+}

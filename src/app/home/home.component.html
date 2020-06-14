@@ -6,7 +6,7 @@
             <p>Apply for your dream Job,keep track of job application status, so that you never miss an opportunity </p>
         </div>
         <div class="col-12 col-lg-8">
-            <img src="\assets\scrum-board.svg" alt="">
+            <img src="/assets/scrum-board.svg" alt="Home-page-image">
         </div>
     </div>
 </div>
@@ -14,8 +14,7 @@
     <section class="feature-section">
         <div class="card-deck feature-card-deck">
             <div class="card feature-card">
-                <img class="card-img-top" src="\assets\discover_jobs.svg" width="100px" height="100px"
-                    alt=" discover jobs">
+                <img class="card-img-top" src="/assets/discover_jobs.svg" width="100" height="100" alt=" discover jobs">
                 <div class="card-body">
                     <h4 class="card-title feature-card-title">Discover Jobs</h4>
                     <p class="card-text">Find your dream company. Filter jobs based on your preference such as Location,
@@ -23,7 +22,7 @@
                 </div>
             </div>
             <div class="card feature-card">
-                <img class="card-img-top" src="\assets\profile.svg" width="100px" height="100px" alt="Manage jobs">
+                <img class="card-img-top" src="/assets/profile.svg" width="100" height="100" alt="Manage jobs">
                 <div class="card-body">
                     <h4 class="card-title feature-card-title">Manage Job
                         Application</h4>
@@ -32,8 +31,7 @@
                 </div>
             </div>
             <div class="card feature-card">
-                <img class="card-img-top" src="\assets\activities.svg" width="100px" height="100px"
-                    alt="Manage activities">
+                <img class="card-img-top" src="/assets/activities.svg" width="100" height="100" alt="Manage activities">
                 <div class="card-body">
                     <h4 class="card-title feature-card-title">Manage Activities</h4>
                     <p class="card-text">Keep record of everything you required to get your dream job eg. preparing
@@ -41,7 +39,7 @@
                 </div>
             </div>
             <div class="card feature-card">
-                <img class="card-img-top" src="\assets\analytics.svg" width="100px" height="100px" alt="Card image cap">
+                <img class="card-img-top" src="/assets/analytics.svg" width="100" height="100" alt="Card image cap">
                 <div class="card-body">
                     <h4 class="card-title feature-card-title">Job Applications Analytics</h4>
                     <p class="card-text">See all your job application status analysis in form of graph. Easy to get
@@ -59,7 +57,7 @@
                 applications so that you can focus fully on the preparation.</p>
         </div>
         <div class="col-12 col-lg-8">
-            <img src="\assets\home-img.svg" alt="">
+            <img src="/assets/home-img.svg" alt="manage-app-img">
         </div>
     </div>
 </div>
@@ -70,13 +68,27 @@
             <form style="margin-left: 25px;margin-right: 25px;">
                 <h2>Contact</h2>
                 <div class="form-group">
-                    <label>Email address</label>
-                    <input type="email" class="form-control" id="contactform" placeholder="Enter your Email-Id">
+                    <mat-form-field appearance="outline" style="width: 100%;">
+                        <mat-label>Email</mat-label>
+                        <input #email="ngModel" matInput required ngModel name="email" placeholder="abc@abc.com"
+                            pattern="^[A-z0-9._%+-]+@[A-z0-9.-]+\.[A-z]{2,4}$">
+                        <mat-icon matSuffix>email</mat-icon>
+                        <mat-error *ngIf=" !email.touched && email.invalid">Email is required</mat-error>
+                        <mat-error *ngIf=" email.touched && email.invalid">
+                            <div *ngIf="email.errors.required">Email is required</div>
+                            <div *ngIf="email.errors.pattern">Enter valid Email id(abc@abc.com)</div>
+                        </mat-error>
+                    </mat-form-field>
                 </div>
-                <div class="form-group">
-                    <label for="description">Description</label>
-                    <textarea class="form-control" style="resize: none;" id="description" rows="3"></textarea>
-                </div>
+                <mat-form-field appearance="outline" style="width: 100%;">
+                    <mat-label>Description</mat-label>
+                    <textarea #descripton="ngModel" matInput required ngModel name="description"
+                        placeholder="Enter description"></textarea>
+                    <mat-error *ngIf="descripton.errors && descripton.errors.required">
+                        description is required
+                    </mat-error>
+                </mat-form-field>
+
                 <button type="submit" class="btn btn-primary">Submit</button>
             </form>
         </div>

@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { BlogsPostDetailComponent } from './blogs-post-detail/blogs-post-detail.component';
+import { JobsDetailComponent } from './jobs-detail/jobs-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'blogs', component: BlogsComponent },
   { path: 'blogs/:id', component: BlogsPostDetailComponent },
   { path: 'jobs', component: JobsComponent },
+  { path: 'jobs/:id', component: JobsDetailComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
   { path: 'contact', component: ContactComponent },
