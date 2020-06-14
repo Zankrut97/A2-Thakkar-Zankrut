@@ -13,6 +13,14 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { BlogsfilterPipe } from './blogs/blogsfilter.pipe';
+import { BlogsPostDetailComponent } from './blogs-post-detail/blogs-post-detail.component';
 
 @NgModule({
   declarations: [
@@ -26,11 +34,19 @@ import { NotfoundComponent } from './notfound/notfound.component';
     SignUpComponent,
     ContactComponent,
     AboutComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    BlogsfilterPipe,
+    BlogsPostDetailComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,12 @@
+.container{
+    min-height: 100%;
+}
+.blog-search-input{
+    border-radius: 25px;
+}
+.create-blog-btn{
+    background-color: gray;
+    color: white;
+    border-radius: 25px;
+    margin-left: 10px;
+}

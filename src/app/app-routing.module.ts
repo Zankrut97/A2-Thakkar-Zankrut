@@ -8,11 +8,13 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { NotfoundComponent } from './notfound/notfound.component';
+import { BlogsPostDetailComponent } from './blogs-post-detail/blogs-post-detail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'blogs', component: BlogsComponent },
+  { path: 'blogs/:id', component: BlogsPostDetailComponent },
   { path: 'jobs', component: JobsComponent },
   { path: 'sign-in', component: SignInComponent },
   { path: 'sign-up', component: SignUpComponent },
