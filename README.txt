@@ -1,50 +1,57 @@
-# Assignment 2
+### Assignment 2 ##
 
-This Assigment focuses on understanding and applying the usability and design principles for overall asethetics of the web application by developing the front-end part. During the implementation of the assignment following four main pages were developed, they are Home/landing page, which shows all the features of the web application and also all other pages can be navigated through the Home page. Sign-in page, user can login to the web application using email-id and password, all validations are performed but on click of sign-in button it is not redirected to other page.Blogs page all the blogs in form of card and content of each blog can be viewed by clicking on the card also user can search particular blog. Jobs page shows all the Job post and user search job based on the role and additional details can be viewed by clicking the card. Additionally "Page not found" page is created and  user will be redirected if they try to visit the page which not exixts. Also for the other pages which are not developed by me will show a message.
+This Assigment focuses on understanding and applying the usability and design principles for overall asethetics of the web application by developing the front-end part. During the implementation of the assignment four pages were developed, they are Home/landing page, which shows all the features of the web application and also all other pages can be navigated through the Home page. Sign-in page, user can login to the web application using email-id and password, all validations are performed.Blogs page shows all the blogs posts in form of card created using Bootstrap and content of each blog can be viewed by clicking on the card also user can search particular blog using search bar. Jobs page shows all the Job post in form of card created using Bootstrap and user can search job based on the role and additional details can be viewed by clicking the card. Additionally "Page not found" page is created and  user will be redirected if they try to visit the page which not exists. Also for the other pages which are not developed by me will show a message.
 
 
 * Date Created: 14 Jun 2020
-* Last Modification Date: 14 Jun 2020
+* Last Modification Date: 15 Jun 2020
 
-## Authors
+### Authors ###
 
-* Thakkar Zankrut Bhavinkumar (zn834201@dal.ca) B00856858
+[Thakkar Zankrut Bhavinkumar (zn834201@dal.ca) B00856858]
 
+## Getting Started ###
 
-## Getting Started
-
-*Github repository link
-
+[Github repository link]
 https://github.com/Zankrut97/A2-Thakkar-Zankrut
 
-*The project is deployed on Heruko.The pages developed can be accessed from the below links
+The project is deployed on Heruko.The pages developed can be accessed from the below links
+[Heruko Link]
+https://a2-thakkar-zankrut.herokuapp.com/
 
-* Home Page - https://a2-thakkar-zankrut.herokuapp.com/home
-* Sign-in Page - https://a2-thakkar-zankrut.herokuapp.com/sign-in
-* Blogs Page - https://a2-thakkar-zankrut.herokuapp.com/blogs
-* Jobs Page - https://a2-thakkar-zankrut.herokuapp.com/jobs
-* Page not found - https://a2-thakkar-zankrut.herokuapp.com/ad
+[Home Page] 
+https://a2-thakkar-zankrut.herokuapp.com/home
 
-### Prerequisites
- 
+[Sign-in Page]
+https://a2-thakkar-zankrut.herokuapp.com/sign-in
+
+[Blogs Page]
+https://a2-thakkar-zankrut.herokuapp.com/blogs
+
+[Jobs Page]
+https://a2-thakkar-zankrut.herokuapp.com/jobs
+
+[Page not found]
+https://a2-thakkar-zankrut.herokuapp.com/ad
+
+### Prerequisites ###
+
 *For running the project, following things should be downloaded installed on the local machine 
 
-*nodejs
-
+[nodejs]
 download link - https://nodejs.org/en/download/
 
-After installing nodejs install npm (package manager) to install required packages
+[npm]
+package manager which is installed along with the nodejs
 
-*angular cli
-
-install using npm 
+[angular cli]
+install using npm
 npm install -g @angular/cli
 
-*visual studio code
-
+[visual studio code]
 download link - https://code.visualstudio.com/download
 
-### Installing
+### Installing (Setting up local environment) ###
 
 1) Download the nodejs from the above given link.
 2) Check the if the installation was successful using following command in the CMD
@@ -56,8 +63,7 @@ download link - https://code.visualstudio.com/download
 	ng --version
 5)Install visual studio code, which is a code editor using above given link.
 
-
-###Steps to run
+### Steps to run ###
 
 1) After intalling the above mentioned tools and software
 2) Create a new directory and clone the github project using the repository link
@@ -67,48 +73,73 @@ download link - https://code.visualstudio.com/download
 5)  After that execute to run the project and view in browser 
 	ng serve -o
 
-## Deployment
+### Deployment ###
 
-The project is deployed usning Heruko.
+The project is deployed using Heruko.
 
-steps
-1) Go to Heruko and sign in with your account- https://www.heroku.com/
+[steps - using reference from Tutorial 2]
+
+1) Go to Heruko and sign in with your account - https://www.heroku.com/
 2) Create new app and give app name and region and click on create app
 3) Choose Gihub integration as our code can be directly used from our github repositiry
 4) Select Repository and branch
-5)select option "Enable Automatic Deploys" it will automaically build and deploy the project after new changes pushed to the repository.
-6)install express on our machine using
+5) Select option "Enable Automatic Deploys" it will automaically build and deploy the project after new changes pushed to the repository branch.
+6)install express using following command
 	npm install express
-7)Build the project
+7)Build the project which will create a 'dist' folder
 	ng build
-8)Create a server.js file and use static file from the "dist" and give port as 8080
+8)Create a server.js file (create by following Tutorial 2)
 9)Add start script in our package.json
 	"start": "ng serve"
 10) run server.js and check everything is working as required
 	node server.js
 11) After checking, push the code to github repository
 12)Heruku will build the project and deploy it.
-13)Go to heruko dashboarda and click on open app
+13)After build is successful click on open app to view the deployed app. 
 	
-## Built With
+### Built With ###
 
-* [Angular](https://angular.io/docs) - web framework used
-* [Bootstrap](https://getbootstrap.com/docs/4.5/getting-started/introduction/) - Bootstrap components and classes are used for responsiveness
-* [Angular Material](https://material.angular.io/guide/getting-started) - Used for styling and form validation
-* [node.js] (https://nodejs.org/en/download/)- package manager
+[Angular]- web framework used
+(https://angular.io/docs) 
 
-##Design Justification
+[Bootstrap] - Bootstrap components and classes are used for developing certain parts of the web app
+(https://getbootstrap.com/docs/4.5/getting-started/introduction/)
 
-*Fonts:
-Google Lato - for some title to make it more expessive.
+[Angular Material]- Used for styling and form validation
+(https://material.angular.io/guide/getting-started) 
+
+[node.js]- package manager
+(https://nodejs.org/en/download/)
+
+### Design Justification ###
+
+**[Fonts / Typography]**
+
+[Google Lato] 
 https://fonts.google.com/specimen/Lato
-Roboto -standard fonts of the website and it matches the overall theme of the web app
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-*Background color 
-Major color used for the web app is (#fee3b8) to enhance some parts of the web app. As the overall theme of was to keep the minimalist design I have used this light shade.
+[Roboto] 
+<link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+The above two mentioned fonts are the used in the web application. Both the Lato and Roboto fonts belong to sans-serif fonts family. The primary reason for using this font is to improve the readability of small text used in the app. Additionally both the fonts are from same sans-serif family which makes the overall font of the web app consistent.[6] 
 
-## Sources Used
+**[Background color]**
+
+As observed in some of the modern web apps, the use of single shade as background keeps 
+overall look and feel consistent.I have decided to use (#fee3b8) as background color, I have decided to select the light shade as background and the Black colour for majority of text which drives the focus of the user to important text or button in the website. In this web app the primary use of background is to highlight the text or selected button on nav bar. Also the reason behind selecting this #fee3b8 shade is it matches with the images used in the website.
+
+**[Button colour]**
+
+For highlighting the selected the nav bar link the colour used is #fee3b8 as it follows the overall color schema of the webapp.
+For submit button (for sign-in) and to navigate to sign-in I have used the bootstrap primary button theme.
+
+**[Cards]**
+
+I have used cards to show the Blog post and Job post. Cards are best way to show the related data of particular blog and job post. It separates the details of a particular blog post from other simailar post so that user can easily find all relevance information at single glance. Also, to highlight the cards I have used box-shawdow property of CSS[7].
+
+### Sources Used ###
 
 ### blogsfilter.pipe.ts
 
@@ -344,20 +375,101 @@ The code above was created by adapting the code in [Bootstrap - Card](https://ge
 - [Bootstrap - Card](https://getbootstrap.com/docs/4.0/components/card/) Code was modified by adding creating dynamic and responsive cards from the list of blogs and jobs using angular
 
 
-## Acknowledgments
-*Navigation menu was created usin Bootstrap(https://getbootstrap.com/docs/4.5/components/navbar/)
-* All the cards were created using the Bootstrap card (https://getbootstrap.com/docs/4.0/components/card/) 
-* Sign-up page was developed using the reference(https://startbootstrap.com/snippets/login/)
-* All the form field were created using angular material forms (https://material.angular.io/components/form-field/overview)
-*text used was generated using lorem-ipsum generator(https://loremipsum.io/)
+### sign-in.component.ts and home.component.ts
+
+Lines 17 - 22 and Lines 19-22
+---------------
+
+```
+  signinconfirmation() {
+    var msg = "Login Successful";
+    this.snackbar.open(msg, 'close', {duration: 3000,horizontalPosition: "center",verticalPosition: "top",panelClass: ["snackbar_confirm"]})
+    this.router.navigate(['/home'])
+  }
+
+sendmail() {
+    var msg = "Mail Sent Successfully";
+    this.snackbar.open(msg, 'close', {duration: 3000,horizontalPosition: "center",verticalPosition: "top",panelClass: ["snackbar_confirm"]})
+  }
+
+```
+
+The code above was created by adapting the code in [Angular Material - Snackbar](https://material.angular.io/components/snack-bar/examples) as shown below: 
+
+```
+   openSnackBar() {
+    this._snackBar.open('Cannonball!!', 'End now', {
+      duration: 500,
+      horizontalPosition: this.horizontalPosition,
+      verticalPosition: this.verticalPosition,
+    });
+  }
+
+```
+
+- The code in [Angular Material - Snackbar](https://material.angular.io/components/snack-bar/examples) was implemented by creating a snackbar to show login and email confirmation.
+- [Angular Material - Snackbar](https://material.angular.io/components/snack-bar/examples) Code was used to create login and email confirmation.
+- [stackoverflow.com](https://stackoverflow.com/questions/44769748/angular-4-pipe-filter) Code was modified by adding the confirmation message using variable as well as applying custom css class to modify the look and feel
 
 
-##References
+### Acknowledgments ###
+
+[Navigation menu was created using Bootstrap]
+(https://getbootstrap.com/docs/4.5/components/navbar/)
+
+[All the cards were created using the Bootstrap card]
+(https://getbootstrap.com/docs/4.0/components/card/) 
+
+[Sign-up page was developed by taking inspiration from link]
+(https://startbootstrap.com/snippets/login/)
+
+[All the form field were created and validated using angular material forms]
+(https://material.angular.io/components/form-field/overview)
+
+[Snackbar to show confirmation msg was created using angular material]
+(https://material.angular.io/components/snack-bar/examples)
+
+[text used in blogs and jobs was generated using lorem-ipsum generator]
+(https://loremipsum.io/)
+
+
+### References ###
+
 [1] Angular, “Angular Material,” Angular Material, 2020. [Online]. Available: [2] https://material.angular.io/. [Accessed: 14-Jun-2020].
-[3] Start Bootstrap, “Bootstrap 4 Login Page Snippet,” Start Bootstrap, 2019. [Online]. Available: [4] https://startbootstrap.com/snippets/login/. [Accessed: 14-Jun-2020].
-[5] The Net Ninja, “Angular 2 Tutorial #22 - Custom Filter Pipe,” YouTube. 2020
-[6] Codevolution, “Angular Forms Tutorial,” YouTube. 2020.
-[7] “Lorem Ipsum,” Lorem Ipsum, 2020. [Online]. Available: https://loremipsum.io/. [Accessed: 14-Jun-2020].
+[2] Start Bootstrap, “Bootstrap 4 Login Page Snippet,” Start Bootstrap, 2019. [Online]. Available: [4] https://startbootstrap.com/snippets/login/. [Accessed: 14-Jun-2020].
+[3] The Net Ninja, “Angular 2 Tutorial #22 - Custom Filter Pipe,” YouTube. 2020
+[4] Codevolution, “Angular Forms Tutorial,” YouTube. 2020.
+[5] “Lorem Ipsum,” Lorem Ipsum, 2020. [Online]. Available: https://loremipsum.io/. [Accessed: 14-Jun-2020].
+[6]"Typography on the web", Medium, 2020. [Online]. Available: https://medium.com/rareview/typography-on-the-web-4cd494d6b165. [Accessed: 14- Jun- 2020].
+[7]"CSS box-shadow property", W3schools.com, 2020. [Online]. Available: https://www.w3schools.com/cssref/css3_pr_box-shadow.asp. [Accessed: 15- Jun- 2020].
+
+### Images Reference ###
+
+[Home Page]
+https://www.flaticon.com/free-icon/briefcase_138228
+https://www.delesign.com/free-designs/graphics/?category=illustrations&asset=scrum-board
+https://www.flaticon.com/free-icon/keywords_2721524?term=discover&page=1&position=9
+https://www.flaticon.com/free-icon/profile_3050410?term=job%20applications&page=1&position=7
+https://www.flaticon.com/free-icon/to-do-list_3014563?term=to%20do&page=1&position=6
+https://www.flaticon.com/free-icon/statistics_2920323?term=analytics&page=1&position=3
+https://www.delesign.com/free-designs/graphics/?category=illustrations&asset=blog
+
+[Blogs Page]
+https://undraw.co/illustrations
+https://undraw.co/search
+
+[Jobs Page]
+https://commons.wikimedia.org/wiki/Category:Google_SVG_logos#/media/File:Google_%22G%22_Logo.svg
+https://logotyp.us/logo/microsoft/
+
+[Sign-in Page]
+https://www.delesign.com/free-designs/graphics/?category=illustrations&asset=scrum-board
+
+[Contact, About, Sign-up]
+https://lukaszadam.com/illustrations
+
+
+
 
 
 
