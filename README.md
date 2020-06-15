@@ -3,9 +3,9 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
 ## Deployment link
-The project is deployed on Heruko.The pages developed can be accessed from the below links
+The project is deployed on Heroku.The pages developed can be accessed from the below links
 
-[Heruko Link]
+[Heroku Link]
 https://a2-thakkar-zankrut.herokuapp.com/
 
 [Home Page] 

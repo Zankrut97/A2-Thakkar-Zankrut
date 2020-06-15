@@ -15,8 +15,8 @@ This Assigment focuses on understanding and applying the usability and design pr
 [Github repository link]
 https://github.com/Zankrut97/A2-Thakkar-Zankrut
 
-The project is deployed on Heruko.The pages developed can be accessed from the below links
-[Heruko Link]
+The project is deployed on Heroku.The pages developed can be accessed from the below links
+[Heroku Link]
 https://a2-thakkar-zankrut.herokuapp.com/
 
 [Home Page] 
@@ -75,11 +75,11 @@ download link - https://code.visualstudio.com/download
 
 ### Deployment ###
 
-The project is deployed using Heruko.
+The project is deployed using Heroku.
 
 [steps - using reference from Tutorial 2]
 
-1) Go to Heruko and sign in with your account - https://www.heroku.com/
+1) Go to Heroku and sign in with your account - https://www.heroku.com/
 2) Create new app and give app name and region and click on create app
 3) Choose Gihub integration as our code can be directly used from our github repositiry
 4) Select Repository and branch
