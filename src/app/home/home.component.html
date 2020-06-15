@@ -65,7 +65,7 @@
 <div>
     <section class="contact-section">
         <div class="container contact-form">
-            <form style="margin-left: 25px;margin-right: 25px;">
+            <form style="margin-left: 25px;margin-right: 25px;" #contactform="ngForm">
                 <h2>Contact</h2>
                 <div class="form-group">
                     <mat-form-field appearance="outline" style="width: 100%;">
@@ -89,7 +89,8 @@
                     </mat-error>
                 </mat-form-field>
 
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button [disabled]="contactform.form.invalid" type="submit" class="btn btn-primary"
+                    (click)="sendmail()">Send</button>
             </form>
         </div>
     </section>

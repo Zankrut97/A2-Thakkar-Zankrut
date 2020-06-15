@@ -23,6 +23,9 @@ import { BlogsfilterPipe } from './blogs/blogsfilter.pipe';
 import { BlogsPostDetailComponent } from './blogs-post-detail/blogs-post-detail.component';
 import { JobsDetailComponent } from './jobs-detail/jobs-detail.component';
 import { JobsfilterPipe } from './jobs/jobsfilter.pipe';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+
+
 
 @NgModule({
   declarations: [
@@ -50,7 +53,8 @@ import { JobsfilterPipe } from './jobs/jobsfilter.pipe';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatSnackBarModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

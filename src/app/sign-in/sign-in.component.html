@@ -13,7 +13,7 @@
                 style="border: 0;border-radius: 16px;box-shadow: 0.5rem 1rem 1rem 0.5rem rgba(0, 0, 0, 0.1);">
                 <div class="card-body">
                     <p style="text-align: center;font-size: 24px;font-weight: 600;">Sign In</p>
-                    <form style="width: 100%;">
+                    <form #signin="ngForm" style="width: 100%;">
                         <div class="form-group">
                             <mat-form-field appearance="outline" style="width: 100%; border-radius:25px !important;">
                                 <mat-label>Email</mat-label>
@@ -40,8 +40,9 @@
                                     Password must be of length 8
                                 </mat-error>
                             </mat-form-field>
+                            <button [disabled]="signin.form.invalid" class="btn btn-lg btn-primary btn-block signin-btn"
+                                type="submit" (click)="signinconfirmation()">SIGN IN</button>
                         </div>
-                        <button class="btn btn-lg btn-primary btn-block signin-btn" type="submit">SIGN IN</button>
                         <p style="margin-top:10px;text-align: center;font-size: 16px ;">Don't have an account?<a
                                 routerLink="/sign-up">Sign up</a></p>
                         <p style="margin-top:5px;text-align: center;font-size: 16px;"><a routerLink="/sign-up">forgot

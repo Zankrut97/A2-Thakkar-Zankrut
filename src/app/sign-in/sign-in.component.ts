@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
+import { MatSnackBarHorizontalPosition } from '@angular/material/snack-bar';
+import { MatSnackBarVerticalPosition } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-sign-in',
@@ -7,9 +11,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignInComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(private snackbar: MatSnackBar, private router: Router) { }
   ngOnInit(): void {
+  }
+
+  signinconfirmation() {
+    var msg = "Login Successful";
+    this.snackbar.open(msg, 'close', { duration: 3000, horizontalPosition: "center", verticalPosition: "top", panelClass: ["snackbar_confirm"] })
+    this.router.navigate(['/home'])
   }
 
 }

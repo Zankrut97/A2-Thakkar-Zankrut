@@ -1,12 +1,16 @@
+<!--To show Blog Post Data-->
 <div class="container">
-    <h1 style="text-align: center; font-weight: 700;">{{blog.title}}</h1>
-
+    <!--Blog's Title-->
+    <h1 class="page-title">{{blog.title}}</h1>
+    <!--Blog's Image-->
     <div class="text-center">
         <img class="rounded img-fluid" src={{blog.img}} alt="Blog Image">
     </div>
-    <div style="margin-top: 15px;">
+    <!--Blog's Content-->
+    <div class="page-content">
         <p>{{blog.content}}</p>
     </div>
+    <!--Blog's Author-->
     <p style="text-align: right;font-style:italic;">-Created by {{blog.author}}</p>
 </div>
 <br>
