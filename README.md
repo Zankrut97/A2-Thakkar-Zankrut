@@ -2,6 +2,27 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.6.
 
+## Deployment link
+The project is deployed on Heruko.The pages developed can be accessed from the below links
+
+[Heruko Link]
+https://a2-thakkar-zankrut.herokuapp.com/
+
+[Home Page] 
+https://a2-thakkar-zankrut.herokuapp.com/home
+
+[Sign-in Page]
+https://a2-thakkar-zankrut.herokuapp.com/sign-in
+
+[Blogs Page]
+https://a2-thakkar-zankrut.herokuapp.com/blogs
+
+[Jobs Page ]
+https://a2-thakkar-zankrut.herokuapp.com/jobs
+
+[Page not found]
+https://a2-thakkar-zankrut.herokuapp.com/ad
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
